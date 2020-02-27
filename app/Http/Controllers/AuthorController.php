@@ -58,4 +58,20 @@ class AuthorController extends Controller
         return view("admin/author/edit", compact("author"));
         
     }
+
+    public function update(Request $request, $id) {
+        // select an existing object Autor from the database 
+        $author = Author::findOrFail($id);
+
+        // fill the object from the request
+        $author->name = $request->input("name");
+        //$request = $_POST VE $_GET, istersen hala bunları kullanabilirsin
+
+        // store the filled object into the database into table "authors", BUT updating
+        $author->save();
+
+        // redirect somewhere
+        return redirect("author/".$author->id."/edit");
+        //bu şimdilik çalışmayacak, return demek zorunda da değildim, sadece executionın bittiğinden emin olmak için koydum
+    }
 }
