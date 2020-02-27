@@ -28,6 +28,11 @@ class AuthorController extends Controller
 
     //to be able to insert author object into the database/table.
     public function store(Request $request) {
+        $this->validate($request, [
+            "name" => "required"
+        ]);
+        //"this" represent the Controller
+
         // dd("çalışıyo");
 
         // create a new object Author
@@ -42,6 +47,8 @@ class AuthorController extends Controller
 
         // store the filled object into the database into table "authors"
         $author->save();
+
+        session()->flash('success_message', 'Success!');
 
         // redirect somewhere
         return redirect("author/".$author->id."/edit");
@@ -60,6 +67,11 @@ class AuthorController extends Controller
     }
 
     public function update(Request $request, $id) {
+
+        $this->validate($request, [
+            "name" => "required"
+        ]);
+
         // select an existing object Autor from the database 
         $author = Author::findOrFail($id);
 
@@ -69,6 +81,8 @@ class AuthorController extends Controller
 
         // store the filled object into the database into table "authors", BUT updating
         $author->save();
+        
+        session()->flash('success_message', 'Success!');
 
         // redirect somewhere
         return redirect("author/".$author->id."/edit");

@@ -28,3 +28,7 @@ boş  obje yarattım authors table'ına bi row yarattım yani, bunu gönderdim e
 now we are trying to update an object which is already existing
 yaptık bunu da, ama bu durumda yeni obje yaratmak için her daim author/create URL'sine gitmem lazım.
 
+
+what if we add an author, we want to edit with a blank value; so changing to the name of the author to nothing. there is an error, lets fix it.
+validation'la olcak bu işler. class'ta var detaylı şekilde açıklıyo.
+
