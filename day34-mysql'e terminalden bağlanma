@@ -1,0 +1,11 @@
+
+*** mysql -u root -p
+
+*** CREATE DATABASE laravel_jukebox;
+
+*** quit
+
+
+Bu direkt olarak phpmyAdminde database oluşturur, table değil database! Database'in içine table girer, table'ların kolonları olur
+
+Sonra da tabi git ".env" dosyasına oradan DB'ni modifiye et ki phpmyadminde oluşturduğun database'i manipüle edebilesin projeden.

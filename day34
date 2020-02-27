@@ -1,0 +1,42 @@
+
+
+Database yaratmıştık terminalden bunları migration yapmamız lazım
+
+**php artisan make:migration create_videos_table
+
+Bunu dediğim an DB oluştu, nerde oluştu?
+---phpMyAdminde oluşmadı!
+---Proje dosyasının(laravel-jukebox) database/migration path'inde oluştu.
+
+Bu ileride phpMyAdmin'e migrate olacak. Nasıl olacak?
+
+
+database/migration/2020_02_27_094720_create_videos_table.php'e gel ve table'ının kolonlarını oluştur, çünkü bi bok  oluşturmadık biz sadec table'ı oluşturduk henüz.
+
+
+**php artisan migrate
+
+Bunu dediğim an oluşturduğum table (kolonlarıyla birlikte) migrate etti. Nereye etti?
+---phpMyAdmine!!
+
+
+
+******Migration historyyi gösteren bir table daha yaratılıyo phpmyAdminde, ilk sefer php artisan migrate komutunu yazdığımızda 
+
+
+**php artisan make:model Video
+Bunun adı "Video" olmak zorunda!!! çünkü table'ın adı "videos"
+
+
+***php artisan make:model Author -m
+---Böyle olunca tek seferde hem modeli hem de table'ı yarattım (tabi ki phpmyAdminde değil, henüz migrate ettirmedim).
+
+
+***php artisan make:model Author -m
+
+***php artisan make:migration create_author_genre_table
+***php artisan make:migration create_author_genre_table
+Çünkü bunlara model lazım değil, bi önceki şekilde yaratırsam, modelleri silmem lazım 
+
+************php artisan migrate:fresh
+dersen tüm table'ları siliyo, tekrar yüklüyo.
