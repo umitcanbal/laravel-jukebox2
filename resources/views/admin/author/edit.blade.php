@@ -52,7 +52,8 @@
             @endforeach
         </ul>
       @endif
-      <input type="text" name="name" value="{{ $author->name }}">
+      
+      <input type="text" name="name" value="{{ old('name', $author->name) }}">
 
     </div>
 

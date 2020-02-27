@@ -32,3 +32,6 @@ yaptık bunu da, ama bu durumda yeni obje yaratmak için her daim author/create 
 what if we add an author, we want to edit with a blank value; so changing to the name of the author to nothing. there is an error, lets fix it.
 validation'la olcak bu işler. class'ta var detaylı şekilde açıklıyo.
 
+
+user'a hatalarını göstermeye çalışıyoruz
+hatasını görürken eski yazdığı değer ekranda kalıyo, hatayı alınca input ekranı bomboş olmuyo, ki öyle oluyodu önceden

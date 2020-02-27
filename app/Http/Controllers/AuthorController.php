@@ -29,7 +29,7 @@ class AuthorController extends Controller
     //to be able to insert author object into the database/table.
     public function store(Request $request) {
         $this->validate($request, [
-            "name" => "required"
+            "name" => "required|min:6"
         ]);
         //"this" represent the Controller
 
@@ -69,7 +69,7 @@ class AuthorController extends Controller
     public function update(Request $request, $id) {
 
         $this->validate($request, [
-            "name" => "required"
+            "name" => "required|min:6"
         ]);
 
         // select an existing object Autor from the database 
