@@ -20,3 +20,6 @@ view fonksiyonu mesela ya da asset vs "laravel helpers"da bulabilirsin bunları.
 
 
 form generated (just schematically) in edit.blade.php. scss file created and filled. webpack modified a bit. compiling done.  
+
+
+boş  obje yarattım authors table'ına bi row yarattım yani, bunu gönderdim edit.blade.php'ye assoc. array olarak, orada bu row'u dolduruyoruz.
