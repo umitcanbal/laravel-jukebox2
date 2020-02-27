@@ -47,4 +47,15 @@ class AuthorController extends Controller
         return redirect("author/".$author->id."/edit");
         //bu şimdilik çalışmayacak, return demek zorunda da değildim, sadece executionın bittiğinden emin olmak için koydum
     }
+
+    //displays the form to edit an existing author record
+    public function edit($id) {
+        $author = Author::findOrFail($id);
+        // $author->name = "Ümitcan";
+        // dd($author);
+        // Bu phpmyadmindekini değiştirmedi ama local'deki objeyi değiştirdi
+
+        return view("admin/author/edit", compact("author"));
+        
+    }
 }

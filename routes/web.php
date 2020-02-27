@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/author/create', "AuthorController@create");
 
 Route::post("/author", "AuthorController@store");
+
+Route::get('/author/{id}/edit', "AuthorController@edit");
