@@ -8,6 +8,9 @@
 </head>
 <body>
   
+<nav>
+  <a href="{{ action('AuthorController@create') }}">New Author</a>
+</nav>
   
   {{ $title }}
   <!-- edit.blade'den geldi bu variable -->
