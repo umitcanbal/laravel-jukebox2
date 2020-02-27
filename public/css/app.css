@@ -1,0 +1,16 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5em;
+  color: #666666;
+}
+
+.form-group input[type=text] {
+  border: 1px solid #999999;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+

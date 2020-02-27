@@ -1,3 +1,22 @@
 Burası 3. commit yapıldıktan sonrasının başı.
 
 admin/layout.blade.php dosyasını ve admin/author/edit.blade.php
+
+4.committen öncesi
+formu yarattık edit.blade.php'de
+
+admin.scss'i yarattık, içini istediğimiz gibi dizayn ettik
+app.scss'i bulduk, açtık ve buraya admin.scss'i import ettik
+
+webpacke git, azıcık modifiye ettik.
+
+compile etmem lazım şimdi, nasıl olacak? 
+**npm install (package.json'dan ne commandler varmış diye yine bakabiliriz, unuttuysak diye)
+
+!!!Formun hala herhangi bir işlevselliği yok, sadece ekranda duruyo 
+
+view fonksiyonu mesela ya da asset vs "laravel helpers"da bulabilirsin bunları.
+
+
+
+form generated (just schematically) in edit.blade.php. scss file created and filled. webpack modified a bit. compiling done.  

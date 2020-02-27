@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/author/create', "AuthorController@create");
+
+// Route::post('/author/create/{variable}', "AuthorController@create");
